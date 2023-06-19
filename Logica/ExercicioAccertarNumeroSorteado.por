@@ -8,13 +8,16 @@ programa
 	funcao inicio() 
 	{
 		inteiro sorteado, chute
-    logico indicadorDeVitoria= falso
+		inteiro tentativas=0
+    		logico indicadorDeVitoria= falso
 		sorteado = u.sorteia(1, 100)
     enquanto( indicadorDeVitoria!=verdadeiro){
     escreva("Chute um número de 1 até 100"+"\n")
     leia(chute)
+    tentativas++
     se(chute==sorteado){
       escreva("Parabéns você acertou \n")
+      escreva("Voce usou tentativas ", tentativas )
       indicadorDeVitoria=verdadeiro
     }senao se(chute>sorteado){
       escreva("O numero sorteado é menor que o valor chutado \n")
@@ -32,7 +35,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 305; 
+ * @POSICAO-CURSOR = 452; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
