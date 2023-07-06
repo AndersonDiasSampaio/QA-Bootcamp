@@ -15,7 +15,7 @@ public class Calculadora {
 		numero2 = input.nextDouble();
 
 		if (operacao == '+') {
-			Soma soma = new Soma();
+			Somar soma = new Somar();
 			System.out.println(soma.operacao(numero1, numero2));
 		} else if (operacao == '-') {
 			Subtrair subtrair = new Subtrair();
