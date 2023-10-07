@@ -1,6 +1,7 @@
+package semana.n1;
 import java.util.Scanner;
-
-public class Calculadora {
+import java.math.*;
+public class Calc {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -27,11 +28,14 @@ public class Calculadora {
 
 		} else if (operacao == '/') {
 			Dividir dividir = new Dividir();
-			if(numero2!=0) {
-			System.out.println(dividir.operacao(numero1, numero2));}
-			else {
-				System.out.println("Divisao invalida");
-			}
+		
+		//	try {
+				System.out.println(dividir.operacao(numero1, numero2));
+		//	} catch (Exception e) {
+				// TODO: handle exception
+			//	System.out.println("Erro");
+		//	}
+			
 
 		} else {
 			System.out.println("operacao inválida");

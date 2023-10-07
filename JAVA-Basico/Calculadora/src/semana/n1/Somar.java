@@ -1,3 +1,4 @@
+package semana.n1;
 
 public class Somar implements OperacaoMatematica {
 
