@@ -18,11 +18,20 @@ public class DriverFactory {
         if (plataformName.equals("Android")) {
             capabilities.setCapability("plataformName", "Android");
             capabilities.setCapability("deviceName", "emulator-5554");
-         /*   capabilities.setCapability("appPackage", "com.android.calculator2");
+          capabilities.setCapability("appPackage", "com.example.lista_tarefas");
             capabilities.setCapability("autoGrantPermissions", "true");
-            capabilities.setCapability("automationName", "UiAutomator2");*/
+            capabilities.setCapability("automationName", "UiAutomator2");
+            capabilities.setCapability("appActivity", "com.example.lista_tarefas.MainActivity");
             capabilities.setCapability("avdArgs", "-no-window");
             appiumDriver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+
+            /*{
+  "deviceName": "emulator-5554",
+  "platformName": "Android",
+  "appPackage": "com.example.lista_tarefas",
+  "appActivity": "com.example.lista_tarefas.MainActivity",
+  "noReset": false
+}*/
         } else {
             Logger.getGlobal().info("Plataforma name dont exist");
         }
